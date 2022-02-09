@@ -53,7 +53,6 @@ class ProductReviewGuiQueryContainer extends AbstractQueryContainer implements P
      */
     public function queryProductReview($idLocale)
     {
-        /** @phpstan-var \Orm\Zed\ProductReview\Persistence\SpyProductReviewQuery */
         return $this->getFactory()
             ->getProductReviewQueryContainer()
             ->queryProductReview()
